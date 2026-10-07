@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>yuKart — Privacy &amp; Supporto</title>
+<meta name="description" content="yuKart: informativa sulla privacy e supporto / privacy policy and support">
+<style>
+  :root {
+    --bg: #f4f6fb;
+    --panel: #ffffff;
+    --text: #1b1f27;
+    --dim: #5b6372;
+    --accent: #e0461f;
+    --accent2: #ffb300;
+    --border: #e1e5ee;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #0f1117;
+      --panel: #171a22;
+      --text: #e9ebf0;
+      --dim: #9aa2b1;
+      --accent: #ff7a4f;
+      --accent2: #ffc94d;
+      --border: #272b36;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 44px 20px 80px; }
+  header { text-align: center; margin-bottom: 28px; }
+  .logo {
+    width: 64px; height: 64px; margin: 0 auto 12px; border-radius: 16px;
+    background: linear-gradient(135deg, var(--accent), var(--accent2));
+    display: flex; align-items: center; justify-content: center; font-size: 34px;
+  }
+  h1 { font-size: 1.7rem; margin: 0; }
+  .subtitle { color: var(--dim); margin-top: 2px; }
+  .lang-switch { display: flex; justify-content: center; gap: 8px; margin: 22px 0 34px; }
+  .lang-switch button {
+    background: var(--panel); color: var(--text); border: 1px solid var(--border);
+    padding: 8px 18px; border-radius: 999px; font-size: 0.92rem; cursor: pointer;
+  }
+  .lang-switch button.active { background: var(--accent); border-color: var(--accent); color: #fff; font-weight: 600; }
+  h2 { font-size: 1.25rem; margin: 34px 0 12px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 14px;
+    padding: 18px 22px; margin-bottom: 14px;
+  }
+  .card h3 { font-size: 1rem; margin: 0 0 6px; }
+  .card p, .card li { color: var(--dim); font-size: 0.95rem; margin: 6px 0; }
+  .card ul { padding-left: 20px; margin: 6px 0; }
+  .highlight { border-color: var(--accent); }
+  .highlight h3 { color: var(--accent); }
+  a { color: var(--accent); }
+  .updated { text-align: center; color: var(--dim); font-size: 0.82rem; margin-top: 36px; }
+  /* senza JavaScript si vedono entrambe le lingue */
+  .js [data-lang]:not(.shown) { display: none; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="logo">🏁</div>
+    <h1>yuKart</h1>
+    <div class="subtitle">Privacy &amp; Supporto · Privacy &amp; Support</div>
+  </header>
+
+  <div class="lang-switch">
+    <button id="btn-it" onclick="setLang('it')" class="active">Italiano</button>
+    <button id="btn-en" onclick="setLang('en')">English</button>
+  </div>
+
+  <!-- ===================== ITALIANO ===================== -->
+  <div data-lang="it" lang="it" class="shown">
+    <h2>Informativa sulla privacy</h2>
+
+    <div class="card highlight">
+      <h3>In breve: nessun dato raccolto</h3>
+      <p>yuKart <strong>non raccoglie, non memorizza su server e non condivide alcun dato personale</strong>. Non ci sono account, pubblicità, strumenti di analisi o tracciamento.</p>
+    </div>
+
+    <div class="card">
+      <h3>Dati sul dispositivo</h3>
+      <p>Impostazioni, record dei tempi, trofei e il "fantasma" della modalità Contro il tempo sono salvati solo sul tuo dispositivo. Lo sviluppatore non vi ha accesso.</p>
+    </div>
+
+    <div class="card">
+      <h3>Multigiocatore (Sfida)</h3>
+      <p>Durante una sfida vengono scambiati solo i dati necessari alla gara (pilota scelto, comandi e posizione dei kart, classifica) <strong>direttamente</strong> tra i dispositivi dei giocatori: tra dispositivi vicini (Wi-Fi peer-to-peer o Bluetooth) oppure tramite Game Center. Nulla passa dai server dello sviluppatore. Non c'è chat.</p>
+      <p>Nella modalità "Vicino a te" gli altri giocatori vedono il nome del tuo dispositivo (per esempio "iPhone"). Il permesso "Rete locale" serve solo per trovare e ospitare partite con i dispositivi vicini.</p>
+    </div>
+
+    <div class="card">
+      <h3>Game Center e acquisti</h3>
+      <p>Se usi Game Center, classifiche, obiettivi e partite online sono gestiti da Apple secondo la sua informativa; nelle partite online gli altri giocatori vedono il tuo nome Game Center.</p>
+      <p>Gli acquisti in-app sono gestiti interamente da Apple: lo sviluppatore non riceve i tuoi dati di pagamento.</p>
+    </div>
+
+    <div class="card">
+      <h3>Bambini</h3>
+      <p>Poiché l'app non raccoglie dati, è adatta anche ai più piccoli. I genitori possono controllare gli acquisti con "Chiedi di acquistare" di In famiglia e limitare il multigiocatore Game Center da Tempo di utilizzo.</p>
+    </div>
+
+    <h2>Supporto</h2>
+
+    <div class="card">
+      <h3>Contatti</h3>
+      <p>Per domande, problemi o suggerimenti scrivi a <a href="mailto:yufretti@gmail.com?subject=yuKart">yufretti@gmail.com</a>. Rispondo di solito entro pochi giorni.</p>
+    </div>
+
+    <div class="card">
+      <h3>Come sfido qualcuno vicino, anche senza Wi-Fi?</h3>
+      <ul>
+        <li>Su entrambi i dispositivi apri <strong>Sfida › Vicino a te</strong>.</li>
+        <li>Uno tocca <strong>«Crea stanza»</strong>, l'altro <strong>«Unisciti»</strong> e sceglie la stanza.</li>
+        <li>Senza una rete (in auto, in viaggio) tenete <strong>Wi-Fi e Bluetooth accesi</strong> su entrambi i dispositivi, anche se non sono collegati a nessuna rete, e state vicini.</li>
+        <li>Al primo avvio consenti l'accesso alla <strong>Rete locale</strong>. Se l'hai negato: Impostazioni › Privacy e sicurezza › Rete locale › yuKart.</li>
+        <li>Funziona anche con due dispositivi che usano lo stesso Apple ID.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Sfida online</h3>
+      <p>Serve Game Center attivo e un account Game Center diverso per ogni giocatore. Se non riesci a invitare o a trovare avversari, controlla in Tempo di utilizzo che il multigiocatore Game Center sia consentito.</p>
+    </div>
+
+    <div class="card">
+      <h3>Ho cambiato dispositivo: come recupero il gioco completo?</h3>
+      <p>Tocca <strong>Sblocca tutto</strong> nel menu (oppure Impostazioni) e poi <strong>«Ripristina acquisti»</strong>, con lo stesso Apple ID usato per l'acquisto. Lo sblocco vale su iPhone, iPad e Mac ed è condivisibile in famiglia.</p>
+    </div>
+  </div>
+
+  <!-- ===================== ENGLISH ===================== -->
+  <div data-lang="en" lang="en">
+    <h2>Privacy Policy</h2>
+
+    <div class="card highlight">
+      <h3>In short: no data collected</h3>
+      <p>yuKart <strong>does not collect, store on servers or share any personal data</strong>. There are no accounts, ads, analytics or tracking.</p>
+    </div>
+
+    <div class="card">
+      <h3>Data on your device</h3>
+      <p>Settings, lap records, trophies and the Time Trial "ghost" are stored only on your device. The developer has no access to them.</p>
+    </div>
+
+    <div class="card">
+      <h3>Multiplayer (Versus)</h3>
+      <p>During a race only the data needed to play (chosen racer, kart controls and positions, standings) is exchanged <strong>directly</strong> between the players' devices: between nearby devices (peer-to-peer Wi-Fi or Bluetooth) or via Game Center. Nothing goes through the developer's servers. There is no chat.</p>
+      <p>In "Nearby" mode other players see your device name (for example "iPhone"). The "Local Network" permission is used only to find and host games with nearby devices.</p>
+    </div>
+
+    <div class="card">
+      <h3>Game Center and purchases</h3>
+      <p>If you use Game Center, leaderboards, achievements and online matches are handled by Apple under its own privacy policy; in online matches other players see your Game Center name.</p>
+      <p>In-app purchases are handled entirely by Apple: the developer never receives your payment details.</p>
+    </div>
+
+    <div class="card">
+      <h3>Children</h3>
+      <p>Because the app collects no data, it is suitable for younger players too. Parents can control purchases with Family Sharing's "Ask to Buy" and limit Game Center multiplayer in Screen Time.</p>
+    </div>
+
+    <h2>Support</h2>
+
+    <div class="card">
+      <h3>Contact</h3>
+      <p>For questions, problems or suggestions, write to <a href="mailto:yufretti@gmail.com?subject=yuKart">yufretti@gmail.com</a>. I usually reply within a few days.</p>
+    </div>
+
+    <div class="card">
+      <h3>How do I race someone nearby, even without Wi-Fi?</h3>
+      <ul>
+        <li>On both devices open <strong>Versus › Nearby</strong>.</li>
+        <li>One taps <strong>"Create room"</strong>, the other taps <strong>"Join"</strong> and picks the room.</li>
+        <li>With no network (in the car, travelling) keep <strong>Wi-Fi and Bluetooth turned on</strong> on both devices, even if they aren't connected to any network, and stay close.</li>
+        <li>Allow <strong>Local Network</strong> access the first time. If you denied it: Settings › Privacy &amp; Security › Local Network › yuKart.</li>
+        <li>It also works with two devices using the same Apple ID.</li>
+      </ul>
+    </div>
+
+    <div class="card">
+      <h3>Online races</h3>
+      <p>Game Center must be on, with a different Game Center account for each player. If you can't invite or find opponents, check in Screen Time that Game Center multiplayer is allowed.</p>
+    </div>
+
+    <div class="card">
+      <h3>I changed device: how do I get the full game back?</h3>
+      <p>Tap <strong>Unlock all</strong> in the menu (or Settings) and then <strong>"Restore purchases"</strong>, using the same Apple ID you bought it with. The unlock works on iPhone, iPad and Mac and can be shared with your family.</p>
+    </div>
+  </div>
+
+  <p class="updated">Ultimo aggiornamento / Last updated: 7 ottobre 2026 / October 7, 2026</p>
+</div>
+
+<script>
+  document.documentElement.classList.add('js');
+  function setLang(l) {
+    document.querySelectorAll('[data-lang]').forEach(function (el) {
+      el.classList.toggle('shown', el.getAttribute('data-lang') === l);
+    });
+    document.getElementById('btn-it').classList.toggle('active', l === 'it');
+    document.getElementById('btn-en').classList.toggle('active', l === 'en');
+    document.documentElement.lang = l;
+  }
+  var q = new URLSearchParams(location.search).get('lang');
+  setLang(q === 'en' || q === 'it' ? q : ((navigator.language || 'it').toLowerCase().indexOf('it') === 0 ? 'it' : 'en'));
+</script>
+</body>
+</html>
